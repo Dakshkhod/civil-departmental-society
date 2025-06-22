@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civil Engineering Society - IIT Jodhpur</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <main class="min-h-screen bg-gray-900 text-gray-100">
+        <!-- Navigation Bar -->
+        <nav class="fixed-top w-100 bg-gray-900 shadow z-50 border-bottom border-gray-800">
+            <div class="container-fluid px-2 px-sm-4 px-lg-6">
+                <div class="d-flex justify-content-center align-items-center h-20">
+                    <!-- Navigation Links -->
+                    <div class="d-flex flex-grow justify-content-center">
+                        <div class="d-flex align-items-center navigation-links">
+                            <a href="#" class="nav-link hover-text-blue-400 transition-colors">Home</a>
+                            <a href="#about-section" class="nav-link hover-text-blue-400 transition-colors">About</a>
+                            <div class="dropdown">
+                                <button class="btn nav-link dropdown-toggle hover-text-blue-400 transition-colors" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Activities
+                                </button>
+                                <ul class="dropdown-menu bg-gray-800 border rounded shadow-lg">
+                                    <!-- Dropdown items can be added here -->
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn nav-link dropdown-toggle hover-text-blue-400 transition-colors" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Team
+                                </button>
+                                <ul class="dropdown-menu bg-gray-800 border rounded shadow-lg">
+                                    <!-- Dropdown items can be added here -->
+                                </ul>
+                            </div>
+                            <a href="#achievements-section" class="nav-link hover-text-blue-400 transition-colors">Achievements</a>
+                            <a href="#gallery-section" class="nav-link hover-text-blue-400 transition-colors">Gallery</a>
+                            <a href="#contact-section" class="nav-link hover-text-blue-400 transition-colors">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Add padding to account for fixed navbar -->
+        <div class="pt-20">
+            <section id="hero-section" class="hero-section relative w-100 min-h-600 min-h-md-800 overflow-hidden d-flex flex-column align-items-center justify-content-center bg-gradient-to-b from-gray-950 to-gray-900">
+                <div class="hero-background absolute inset-0 bg-building opacity-20"></div>
+                <div class="relative z-10 d-flex flex-column align-items-center px-4">
+                    <div class="rounded-circle p-2 bg-gradient-to-tr from-blue-900 via-blue-700 to-blue-900 animate-breath-glow">
+                        <img
+                            src="public/logo.png"
+                            alt="CIE Society Logo"
+                            class="w-32 h-32 w-md-48 h-md-48 rounded-circle object-cover object-center border-4 border-gray-800 shadow-xl bg-gray-900"
+                            style="display: block; padding: 8px; box-sizing: border-box;"
+                        />
+                    </div>
+                    <h1 class="text-4xl text-md-6xl fw-extrabold mt-8 mb-4 text-center max-w-4xl mx-auto">
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 animate-gradient-x">
+                            Civil Engineering Society
+                        </span>
+                    </h1>
+                    <h2 class="text-2xl text-md-4xl fw-bold mb-8 text-center max-w-3xl mx-auto text-gray-300">
+                        Indian Institute of Technology Jodhpur
+                    </h2>
+                </div>
+            </section>
+
+            <!-- About the Society & Vision Section -->
+            <section id="about-section" class="py-20 px-4 max-w-4xl mx-auto bg-gray-900">
+                <div class="relative bg-gray-800-50 backdrop-blur-sm rounded-30 shadow-xl p-8 p-md-12 d-flex flex-column gap-12 border border-gray-700-50 overflow-hidden transform transition-all duration-300 hover-scale-101 hover-shadow-2xl">
+                    <div class="absolute inset-0 z-0 opacity-10 pattern-bg"></div>
+                    <div class="relative z-10">
+                        <h2 class="text-3xl text-md-4xl fw-bold text-blue-300 mb-6 d-flex align-items-center gap-3 about-heading">
+                            <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                            About the Society
+                        </h2>
+                        <p class="text-lg text-gray-200 leading-relaxed about-paragraph">
+                            <span class="fw-semibold text-blue-300">The Civil & Infrastructure Engineering Society (CIE), IIT Jodhpur</span> empowers the next generation of civil engineers. We are a vibrant community dedicated to fostering academic excellence, innovation, and professional growth—fostering collaboration among students, faculty, alumni, and industry to drive sustainable and resilient infrastructure for a better tomorrow.
+                        </p>
+                    </div>
+                    <div class="relative z-10">
+                        <h2 class="text-2xl text-md-3xl fw-bold text-blue-300 mb-6 d-flex align-items-center gap-3 vision-heading">
+                            <svg class="w-7 h-7 text-green-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m4 0h-1v4h-1m-4 0h-1v-4h-1" />
+                            </svg>
+                            Our Vision
+                        </h2>
+                        <ul class="space-y-6 mt-6">
+                            <li class="d-flex align-items-start gap-4 about-card p-4 rounded-lg bg-gray-800-50 hover-bg-gray-800-70 transition-colors transform hover-translate-y-1 hover-shadow-lg">
+                                <span class="mt-1 text-blue-400">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 01-8 0" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v4" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8" />
+                                    </svg>
+                                </span>
+                                <div>
+                                    <span class="fw-semibold text-blue-300 d-block mb-1">Integrity in Design</span>
+                                    <span class="text-gray-300">Committed to ethical practices, robust standards, and honest innovation.</span>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start gap-4 about-card p-4 rounded-lg bg-gray-800-50 hover-bg-gray-800-70 transition-colors transform hover-translate-y-1 hover-shadow-lg">
+                                <span class="mt-1 text-green-400">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3" />
+                                        <circle cx="12" cy="12" r="10" />
+                                    </svg>
+                                </span>
+                                <div>
+                                    <span class="fw-semibold text-green-300 d-block mb-1">Sustainability in Action</span>
+                                    <span class="text-gray-300">Building for today and tomorrow—championing green technologies and long-term harmony with the environment.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="py-20 px-4 max-w-4xl mx-auto bg-gray-900">
+                <h3 class="text-4xl fw-extrabold mb-8 text-center text-blue-300 drop-shadow-md about-us-heading">
+                    About Us
+                </h3>
+                <p class="text-xl mb-12 text-gray-200 leading-relaxed text-center about-us-paragraph">
+                    The Civil Engineering Society at IIT Jodhpur is a vibrant community dedicated to fostering academic excellence, research, and professional growth among students. We organize technical workshops, guest lectures, industrial visits, and social events to bridge the gap between theory and practice.
+                </p>
+                <div class="d-flex flex-column flex-md-row gap-8 mt-8">
+                    <div class="flex-1 relative bg-gray-800-60 rounded-3xl p-8 shadow-xl border border-gray-700-50 transform transition-all duration-300 hover-scale-102 hover-shadow-2xl overflow-hidden vision-mission-card">
+                        <div class="absolute inset-0 z-0 opacity-5 pattern-bg"></div>
+                        <div class="relative z-10">
+                            <h4 class="fw-extrabold text-blue-400 mb-4 text-3xl d-flex align-items-center gap-2">
+                                <svg class="w-7 h-7 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                Vision
+                            </h4>
+                            <p class="text-lg text-gray-300 leading-relaxed">
+                                To nurture innovative civil engineers who contribute to sustainable development and nation-building.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex-1 relative bg-gray-800-60 rounded-3xl p-8 shadow-xl border border-gray-700-50 transform transition-all duration-300 hover-scale-102 hover-shadow-2xl overflow-hidden vision-mission-card">
+                        <div class="absolute inset-0 z-0 opacity-5 pattern-bg"></div>
+                        <div class="relative z-10">
+                            <h4 class="fw-extrabold text-green-400 mb-4 text-3xl d-flex align-items-center gap-2">
+                                <svg class="w-7 h-7 text-green-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-1.28-8.455-3.245m16.91 0c.928 0 1.79.37 2.445 1.025s1.025 1.517 1.025 2.445a3.5 3.5 0 11-7 0m-7.29 0c-.928 0-1.79.37-2.445 1.025S4.5 15.223 4.5 16.151a3.5 3.5 0 11-7 0" /></svg>
+                                Mission
+                            </h4>
+                            <p class="text-lg text-gray-300 leading-relaxed">
+                                To provide a platform for learning, leadership, and collaboration among students, faculty, and industry.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Highlights Section -->
+            <section class="py-20 px-4 bg-gray-900" id="services-section">
+                <h3 class="text-4xl fw-extrabold mb-12 text-center text-blue-300 drop-shadow-md service-heading">What We Offer</h3>
+                <div class="services-container max-w-5xl mx-auto">
+                    <div class="service-item-wrapper">
+                        <div class="bg-gray-800-60 rounded-xl shadow-xl p-8 d-flex flex-column align-items-center service-item border border-gray-700-50 transform transition-all duration-300 hover-scale-102 hover-shadow-2xl h-100">
+                            <span class="text-5xl mb-6 text-blue-400">🛠️</span>
+                            <h5 class="fw-extrabold text-blue-300 mb-3 text-2xl">Workshops & Seminars</h5>
+                            <p class="text-center text-gray-300 text-lg">Hands-on learning with experts from academia and industry.</p>
+                        </div>
+                    </div>
+                    <div class="service-item-wrapper">
+                        <div class="bg-gray-800-60 rounded-xl shadow-xl p-8 d-flex flex-column align-items-center service-item border border-gray-700-50 transform transition-all duration-300 hover-scale-102 hover-shadow-2xl h-100">
+                            <span class="text-5xl mb-6 text-green-400">🏗️</span>
+                            <h5 class="fw-extrabold text-blue-300 mb-3 text-2xl">Industrial Visits</h5>
+                            <p class="text-center text-gray-300 text-lg">Real-world exposure to construction sites and infrastructure projects.</p>
+                        </div>
+                    </div>
+                    <div class="service-item-wrapper">
+                        <div class="bg-gray-800-60 rounded-xl shadow-xl p-8 d-flex flex-column align-items-center service-item border border-gray-700-50 transform transition-all duration-300 hover-scale-102 hover-shadow-2xl h-100">
+                            <span class="text-5xl mb-6 text-pink-400">🤝</span>
+                            <h5 class="fw-extrabold text-blue-300 mb-3 text-2xl">Networking</h5>
+                            <p class="text-center text-gray-300 text-lg">Connect with alumni, professionals, and fellow students.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="py-20 px-4 text-center bg-gray-900" id="contact-section">
+                <h3 class="text-4xl fw-extrabold mb-8 text-blue-300 drop-shadow-md contact-heading">Join Us!</h3>
+                <p class="mb-10 text-xl text-gray-200 leading-relaxed">
+                    Be a part of our journey to shape the future of civil engineering. Participate, learn, and grow with us.
+                </p>
+                <a
+                    href="#"
+                    class="btn btn-primary btn-lg px-10 py-4 rounded-pill shadow-lg hover-bg-blue-600 transition-all duration-300 transform hover-translate-y-1 hover-scale-105 animate-pulse-grow"
+                >
+                    Become a Member
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
