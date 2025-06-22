@@ -361,3 +361,66 @@ body {
     max-width: 33.333%; /* Prevents items from exceeding this width */
     display: flex; /* To make the inner div fill the wrapper */
 }
+
+/* Footer styles */
+.footer-bar {
+    background-color: #1f2937;
+    color: #f3f4f6;
+    border-top: 1px solid rgba(55, 65, 81, 0.5);
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    margin-top: 2rem;
+}
+.footer-bar h5 {
+    color: #93c5fd;
+    margin-bottom: 0.75rem;
+}
+.footer-bar a {
+    color: #e5e7eb;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer-bar a:hover {
+    color: #60a5fa;
+}
+.footer-bar .social-icon {
+    font-size: 3rem;
+    margin-right: 1rem;
+    transition: color 0.2s;
+}
+.footer-bar .social-icon:last-child {
+    margin-right: 0;
+}
+@media (max-width: 768px) {
+    .footer-bar .container-fluid {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 1.5rem !important;
+    }
+    .footer-bar {
+        text-align: left;
+    }
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+.footer-logo-img {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    filter: none;
+    background: transparent;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+    border-radius: 12px;
+}
+@media (max-width: 768px) {
+    .footer-logo-img {
+        max-width: 140px;
+        max-height: 140px;
+    }
+}
