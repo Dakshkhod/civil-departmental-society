@@ -10,6 +10,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* Utility classes */
@@ -350,16 +351,21 @@ body {
 /* Custom styles for the services section */
 .services-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: stretch; /* Ensures all items have the same height */
-    gap: 1.5rem; /* Adjust gap as needed */
-    flex-wrap: nowrap; /* This is the key to prevent wrapping */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 100%;
 }
 
 .service-item-wrapper {
-    flex: 1 1 33.333%; /* Allows items to grow and shrink, with a base of 33.333% */
-    max-width: 33.333%; /* Prevents items from exceeding this width */
-    display: flex; /* To make the inner div fill the wrapper */
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 0.5rem;
 }
 
 /* Footer styles */
@@ -475,17 +481,15 @@ body {
 @media (max-width: 991.98px) {
     .services-container {
         flex-direction: column !important;
-        gap: 1rem !important;
-        align-items: stretch !important;
+        align-items: center !important;
+        justify-content: flex-start;
+        gap: 1.25rem !important;
+        padding: 0 0.5rem;
     }
-    .service-item-wrapper, .col-md-4, .col-4 {
+    .service-item-wrapper {
         max-width: 100% !important;
-        flex: 1 1 100% !important;
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-    }
-    .service-item {
-        padding: 1rem !important;
+        width: 100% !important;
+        margin: 0 auto 1rem auto !important;
     }
 }
 
@@ -493,13 +497,13 @@ body {
 @media (max-width: 991.98px) {
     .footer-bar .row {
         flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
         gap: 1.5rem !important;
-        align-items: stretch !important;
     }
     .footer-bar .col-md-2, .footer-bar .col-md-3, .footer-bar .col-md-5 {
         max-width: 100% !important;
         flex: 1 1 100% !important;
-        text-align: center !important;
         margin-bottom: 1rem !important;
     }
     .footer-logo-img {
@@ -521,5 +525,77 @@ body {
     }
     .gap-4, .gap-8, .gap-12 {
         gap: 0.75rem !important;
+    }
+}
+
+/* Mobile-friendly service cards */
+@media (max-width: 767.98px) {
+    .services-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1.25rem !important;
+        padding: 0 0.5rem;
+    }
+    .service-item-wrapper {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 auto 1rem auto !important;
+    }
+    .service-item {
+        border-radius: 1.25rem !important;
+        padding: 1rem 0.5rem !important;
+        min-width: 0 !important;
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .service-item span {
+        font-size: 2.2rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    .service-item h5 {
+        font-size: 1.1rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    .service-item p {
+        font-size: 0.98rem !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .services-container {
+        /* Remove row layout, always column */
+        /* No changes needed here */
+    }
+    .service-item-wrapper {
+        max-width: 400px;
+        margin: 0 auto 1rem auto;
+    }
+}
+
+/* Default: footer row is horizontal and spaced out */
+.footer-bar .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 0;
+}
+
+/* On small screens, stack footer columns vertically and center */
+@media (max-width: 991.98px) {
+    .footer-bar .row {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 1.5rem !important;
+    }
+    .footer-bar .col-md-2, .footer-bar .col-md-3, .footer-bar .col-md-5 {
+        max-width: 100% !important;
+        flex: 1 1 100% !important;
+        margin-bottom: 1rem !important;
     }
 }
