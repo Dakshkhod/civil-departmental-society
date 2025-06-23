@@ -424,3 +424,102 @@ body {
         max-height: 140px;
     }
 }
+
+/* Responsive adjustments for navigation */
+@media (max-width: 991.98px) {
+    .navigation-links {
+        display: flex !important;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+        align-items: flex-start;
+        padding: 1rem 0;
+    }
+    .navbar-collapse {
+        background: #111827;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+    }
+}
+
+/* Responsive hero section */
+@media (max-width: 767.98px) {
+    .hero-section {
+        min-height: 350px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .hero-section img {
+        max-width: 90px !important;
+    }
+    .display-4, .h1, .text-4xl {
+        font-size: 2rem !important;
+    }
+    .h4, .text-2xl {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* Responsive about/vision cards */
+@media (max-width: 767.98px) {
+    .vision-mission-card {
+        margin-bottom: 1rem;
+        padding: 1rem !important;
+    }
+    .max-w-4xl, .max-w-3xl, .max-w-5xl {
+        max-width: 100% !important;
+    }
+}
+
+/* Responsive services section */
+@media (max-width: 991.98px) {
+    .services-container {
+        flex-direction: column !important;
+        gap: 1rem !important;
+        align-items: stretch !important;
+    }
+    .service-item-wrapper, .col-md-4, .col-4 {
+        max-width: 100% !important;
+        flex: 1 1 100% !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .service-item {
+        padding: 1rem !important;
+    }
+}
+
+/* Responsive footer */
+@media (max-width: 991.98px) {
+    .footer-bar .row {
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+        align-items: stretch !important;
+    }
+    .footer-bar .col-md-2, .footer-bar .col-md-3, .footer-bar .col-md-5 {
+        max-width: 100% !important;
+        flex: 1 1 100% !important;
+        text-align: center !important;
+        margin-bottom: 1rem !important;
+    }
+    .footer-logo-img {
+        max-width: 100px !important;
+        max-height: 100px !important;
+    }
+}
+
+/* General responsive text and spacing */
+@media (max-width: 575.98px) {
+    .p-4, .p-8, .p-md-12, .px-4, .px-6, .px-10, .py-4, .py-20, .pt-20 {
+        padding: 0.75rem !important;
+    }
+    .mb-4, .mb-6, .mb-8, .mb-10, .mb-12 {
+        margin-bottom: 1rem !important;
+    }
+    .mt-8, .mt-6 {
+        margin-top: 1rem !important;
+    }
+    .gap-4, .gap-8, .gap-12 {
+        gap: 0.75rem !important;
+    }
+}
